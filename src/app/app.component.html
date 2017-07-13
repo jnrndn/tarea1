@@ -1,13 +1,19 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<img [src]="imgSource">
-<h1>
-  Welcome to {{ title }} by {{ author }}!!
-</h1>
-<app-my-component></app-my-component>
-<button (click)="count = count + 1"> Click me </button>
-<span> {{ count }} </span>
-<hr>
-<button (click)="enable = !enable"> Enable/Disable </button>
-<input [disabled]="enable" type="text">
+<div style="text-align:center">
+  <img [src]="imgSource">
+  <h1>Welcome to {{ title }}. By {{ author }}!!</h1>
+  <app-my-component></app-my-component>
+  <div>
+    <button (click)="count = count + 1"> Click me </button>
+    <label> {{ count }} </label>
+    <button (click)="count = 0"> Reset </button>
+  </div>
+  <div style="margin-top: 20px">
+    <button (click)="enable = !enable"> Enable/Disable </button>
+    <input [disabled]="enable" type="text">
+    <div style="margin-top: 5px">
+      <label *ngIf="enable"> Disable </label>
+    </div>
+  </div>
+</div>
 
 

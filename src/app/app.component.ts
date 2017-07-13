@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'My Application';
   author = "Juan Rendon";
   count = 0;
-  imgSource = "./../favicon.ico";
+  imgSource = "./favicon.ico";
   enable = true;
 }
